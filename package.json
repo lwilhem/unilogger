@@ -1,0 +1,29 @@
+{
+  "name": "uni-logger",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.10.0",
+  "description": "minimal & elegant logger",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "check": "tsc --noEmit",
+    "build": "tsup --minify"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.6.0",
+    "@types/node": "^22.5.4",
+    "eslint": "^9.10.0",
+    "tsup": "^8.2.4",
+    "typescript": "5.5.4"
+  }
+}
