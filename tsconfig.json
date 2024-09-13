@@ -4,6 +4,11 @@
     "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
+
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
     "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
