@@ -6,9 +6,9 @@ export default defineConfig({
   entry: [
     "./src/**/*.ts",
   ],
-  format: ["esm", "cjs"],
+  format: ["esm"],
   outDir: "./dist",
-  dts: true,
+  dts: false,
   clean: true,
   splitting: false,
 })
